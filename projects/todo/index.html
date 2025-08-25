@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To‑Do App | Wycliff Mutua</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <h1>To‑Do List</h1>
+
+    <form id="todo-form" autocomplete="off">
+      <input id="todo-input" type="text" placeholder="Add a new task…" />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="controls">
+      <input id="search" type="text" placeholder="Search tasks…" />
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="active">Active</option>
+        <option value="completed">Completed</option>
+      </select>
+      <button id="clear-completed" class="ghost">Clear Completed</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <p class="meta"><span id="left-count">0</span> items left</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
